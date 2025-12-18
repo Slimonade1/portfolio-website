@@ -3,11 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons in fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
+
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <!-- NAVBAR -->
+     <nav>
+        <div class="left">
+            <a href="/">Simon Toftemark</a>
+        </div>
+            
+        <div class="right">
+            <a href="https://github.com/Slimonade1" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/simon-toftemark-54789a210/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="mailto:simon.123toftemark@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+
+     </nav>
+
+     <main>
+        <!-- Section 1: Hero -->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Simon 👋</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi vero cum sint quo voluptate sit culpa delectus nesciunt fugit reiciendis! Voluptatibus nemo odio debitis assumenda reiciendis vero quo illum, neque itaque quam atque modi ad odit distinctio a eligendi ab corporis voluptates suscipit nulla? Voluptas placeat veniam esse commodi maiores?</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/hero-headshot.webp" alt="simon toftemark headshot">
+            </div>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eligendi unde voluptatum quisquam maiores repellat ullam facilis, soluta distinctio assumenda.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="javascript logo">
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/node-logo.webp" alt="node logo">
+                    <span>Node.js</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/react-logo.webp" alt="react logo">
+                    <span>React.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Testimony -->
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+
+            <div class="group">
+                <div class="person-details">
+                    <img src="images/testimony-headshot.webp">
+                    <p>John Doe</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                
+                <div class="text">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequuntur architecto debitis quis harum qui cupiditate temporibus ducimus? Reprehenderit excepturi nulla, itaque ea labore repellat dignissimos voluptate. Cupiditate praesentium pariatur, alias similique magnam nisi obcaecati ratione eveniet! Repudiandae necessitatibus, nisi nemo iusto dolore dignissimos commodi explicabo voluptate sapiente, quaerat asperiores?""
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam iusto commodi non recusandae blanditiis, a aliquid dolores architecto error aut sapiente tempore, sequi nihil ducimus laudantium cumque! Ducimus tempore minima voluptatibus, delectus quasi cumque tenetur molestias expedita dolores quisquam accusantium esse, error officia necessitatibus laudantium vero aliquam voluptatem. Sunt?
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+     </main>
 </body>
 </html>
